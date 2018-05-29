@@ -16,12 +16,21 @@ img {
 }
 
 div {
+	font-family: Garamond;
+	text-indent: 50px;
     border: 1px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
     background-color: white;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+div.menu {
+	font-size: 30px;
+	text-align: center;
 }
 
 </style>
@@ -30,8 +39,8 @@ div {
 
 	<h4> Modeled after the <a href="https://sportsmattersandover.wordpress.com/">Sports Matters Blog</a> </h4>
 
-	<div>
-		<table style="width:100%" cellspacing="2" cellpadding="2">
+	<div class="menu">
+		<table style="width:100%" cellspacing="2" cellpadding="2" style="font-size: 25px">
 			<tbody>
 				<tr style="background-color: #ffffff">
 					<td>
@@ -54,7 +63,7 @@ div {
 
 		<hr>
 
-		<p> There are almost half a million high school baseball players in America, but only about 5% will play on a college team [1, 2]. Of that 5%, only 10% will be drafted by an MLB team, and of all minor leaguers, only 10% will ever get drafted into the majors [3]. MLB players are the best of the best, but there are a LOT of them.
+		<p> There are almost half a million high school baseball players in America, but only about 5% will play on a college team [1, 2]. Of that 5%, only 10% will be drafted by an MLB team, and of all minor leaguers, only 10% will ever get drafted into the majors [3]. <b> MLB players are the best of the best, but there are a LOT of them. </b> 
 		</p>
 
 		<img src="Golf.jpg" width="800" height="600">
@@ -77,11 +86,11 @@ div {
 
 		<img src="streaks2.jpg" width="900" height="700">
 
-		<p>Well, one thing some are doing differently is taking more risk. There are 44 players in the Top 10 Home Run list that also made the Top 10 Strikeout list during the same period. Analyzing the number of times a player has appeared in the Home Run list against the number of times he appeared in the Strikeout list one can find a positive correlation with an R2 of 0.308. This suggests that some of these players may be stepping up to the plate with a ”home run or go home” mentality. This may indicate that Top 10 hitters are more willing than the average player to swing for the fences. Again, this does not tell the whole story, but it suggests that a risky batting strategy maybe a material factor in the unusual performance of Top 10 hitters. So, what else could they be doing differently?
+		<p>Well, one thing some are doing differently is taking more risk. There are <b> 44 players in the Top 10 Home Run list that also made the Top 10 Strikeout list during the same period </b>. Analyzing the number of times a player has appeared in the Home Run list against the number of times he appeared in the Strikeout list one can find a positive correlation with an R2 of 0.308. This suggests that some of these players may be stepping up to the plate with a ”home run or go home” mentality. This may indicate that Top 10 hitters are more willing than the average player to swing for the fences. Again, this does not tell the whole story, but it suggests that a risky batting strategy maybe a material factor in the unusual performance of Top 10 hitters. So, what else could they be doing differently?
 		</p>
 
 
-		<img src="cheaters.jpg" width="700" height="700">
+		<img src="cheaters.jpg" width="700" height="500">
 
 		<p>Sadly, there is large number of cheaters among the most successful and most consistent Top 10 Home Run hitters. Of the 16 players that had more than 4 appearances in the Top 10 list during the 1992-2017 period, 9 have been caught cheating. That is more than half! Interestingly, of the 7 that remain, almost half of them also made several appearances in the Top 10 Strikeout list.
 		</p>	
@@ -89,7 +98,7 @@ div {
 		<p>So, what does it take to be a Top 10 Home Run Hitter in the MLB? It seems that embracing RISKY strategies is the likely answer. Risk of getting struck out a lot, and risk of getting caught cheating. So, are Top 10 players the Best of the Best, or the Worst of Best?
 		</p>	
 
-		<img src="cheats.jpg" width="900" height="700">
+		<img src="cheats.jpg" width="600" height="600">
 
 		<h1> References </h1>
 
@@ -122,7 +131,55 @@ div {
 
 		<hr>
 
-		
+		<p>When it comes to explaining extraordinary outcomes, I believe in luck, even more than I believe in reason. I find that luck is often more useful when it comes to understanding the world as it really is. I learned early on that reason is too vulnerable to personal bias, and that outcomes are less deterministic than I wish. This makes me skeptical of even the best reasoned and well supported arguments. I tend to doubt any explanation that attributes extraordinary outcomes to a single factor or individual skills. I tell myself there are too many variables, and that people are really good at reverse engineering explanations that fit their assumptions. I am even disappointed when I cannot make a good argument for luck as key factor. This approach has served me well, and I was looking forward to many more years of being the person that “always knew the explanation was too neat to be true”.  I liked leading with skepticism. Recently, however, I stumbled onto an argument for leading with curiosity instead.
+		</p>
+
+		<img src="fig1.jpg" width="800" height="600">
+
+		<p>It all started a couple of months ago, when I ran across a paper entitled Mozart or Pelé? [1] As an avid soccer player, and retired amateur pianist, the question was too hard to resist. The paper documents a study that tried to characterize the relative advantages of playing sports versus playing a musical instrument. According to the authors, many studies have concluded that sports and music are beneficial, and worth the investment of time and money, but no study had provided information that would help a parent determine which was more beneficial in a head to head comparison. They concluded that music holds a slight edge, but that the best approach was to do both. However, their conclusion was not as interesting to me, as the fact that they spent more than sixty of the almost eighty-page report figuring out if their conclusions were “robust”. In other words, they wanted to know how likely their conclusions were to hold beyond their data set. They used various statistical analysis techniques to conclude that they were, within a reasonable degree of confidence, but it left me wondering how other researchers tackled the question of robustness.
+		</p>	
+
+		<img src="fig2.jpg" width="800" height="600">
+
+		<p>What I found was somewhat disturbing. The consensus seems to be that any capable researcher looking for a particular correlation will probably find it whether it exists in the real world or not [2]. It is just a matter of finding the right data, considering only the right variables, and using the right algorithm. The world is full of spurious correlations [3], and the analytics technologies that I so admire, are making the task of distinguishing signal from noise harder, not easier. Even when there is no fraudulent intent, and standard data-scientific methodologies are followed, unless there is a real effort to challenge the results, conclusions can be incorrect and misleading. It is human nature to see patterns where there are none, and confirm biases.
+		</p>	
+
+		<img src="fig3.jpg" width="400" height="500">
+
+		<p>So, what can be done about it? For one, researchers can commit to adopting an ensemble learning approach which looks for independent models to converge [2]. If different samples from the same data set and different algorithms converge then there is less likelihood the pattern false. Researchers can also use A/B testing in which alternative models are pitted against each other, looking for the one with the most predictive value. Also, researchers can apply classic robustness analysis as performed in the Mozart or Pelé study, in which data is examined for factors such as selection bias and heterogeneity [1]. However, researchers are rarely able to eliminate all sources of uncertainty, and must disclose their concerns. Increasingly, people that consume research findings use these disclosures to read into their findings what they want [4]. People that were inclined to agree with their conclusions will take them as true, and people inclined to reject them feel justified in doing so. Ironically, research aimed at creating new knowledge is being used more and more to confirm old assumptions [5]. In some cases, such as global warming and gun violence research, the inability to change minds through facts has deadly consequences. It seems to be getting worse. Figure below represents division of Democrat and Republic Party members over time. Grey area is common votes (both democrat and republican coincide).
+		</p>	
+
+		<img src="fig4.jpg" width="800" height="1000">
+	
+		<p>There has never been more information, and more ways to process and communicate information, as now. However, studies show that any attempts to persuade people with an opposing view, are more likely to more deeply entrench them in their views [6]. People are using logic and reason to protect the groups to which they belong from facing uncomfortable truths. In fact, the smarter a person is, the less likely he/she is to be persuaded by new facts. In a recent study, people with a range of math skills were given data about a drug trial, and were asked to determine the how effective was treatment [6]. As expected, people with stronger math skills found to the correct answer more often than those with weaker math skills. However, when given data about a gun control measure, people with strong math skills were 45% more likely to find the correct answer when the data agreed with their viewpoint on gun control.  Smart people use the superior power of their minds to create better arguments against information that challenges their beliefs. So, if not the smartest, who then is our best hope for discerning fact from fiction? Truth from lies? Who? The curious.
+		</p>
+
+		<img src="fig5.jpg" width="800" height="400">
+
+		<p>Studies show people that are curious are less polarized in their views of contentious issues [7]. Given the same data, curious people on opposing sides of an issue, are more likely to agree with each other. The lesson is that engaging a subject critically, even when using the best analytics, is unlikely to uncover the truth, unless the subject is approached with curiosity. Embrace surprises, and beware of confirmation.
+		</p>
+
+		<h1> References </h1>
+
+		<h4> [1] Cabane, C. (2015) <a href="http://www.diw.de/documents/publikationen/73/diw_01.c.504505.de/diw_sp0749.pdf">“Mozart or Pelé? The Effects of Teenagers Participation in Music and Sports”. IZA Discussion Paper No. 8987. April, 2015.</a> </h4>
+
+
+		<h4> [2] Kobielus, J. (2016). <a href="https://www.infoworld.com/article/3109497/analytics/know-when-your-big-data-is-telling-big-lies.html">“Know When Your Big Data is Telling Big Lies”. Infoworld. August 23, 2016.</a> </h4>
+
+		<h4> [3] Yau, N. (2014). <a href="http://flowingdata.com/2014/05/12/random-things-that-correlate/"> “Random Things That Correlate”. FlowingData. 2014.</a> </h4>
+
+		<h4> [4] Mooney, C. (2015). <a href="http://www.motherjones.com/politics/2011/04/denial-science-chris-mooney/">“The Science of Why We Don’t Believe in Science”. Mother Jones. May/June, 2011.</a> </h4>
+
+		<h4> [5] Rost, CL. (2017). <a href="https://re-publica.com/en/session/data-vis-or-why-you-dont-believe-facts-and-how-fix-it">“Data Vis or: Why you Don’t believe in facts, and how to fix it”. Re:publica. 2017.</a> </h4>
+
+		<h4> [6] Resnick, B. (2017). <a href="https://www.vox.com/science-and-health/2017/2/1/14392290/partisan-bias-dan-kahan-curiosity">“There may be an antidote to politically motivated reasoning. And it’s wonderfully simple” . Vox. February 7, 2017.</a> </h4>
+
+		<h4> [7] Hathaway, B. (2017). <a href="https://news.yale.edu/2017/01/26/antidote-partisanship-science-curiosity-seems-work">“Antidote for partisanship? In science, curiosity seem to work” . YaleNews. January 26, 2017.</a> </h4>
+
+
+		<h4><a href="https://dwellingintheword.wordpress.com/2014/01/31/1240-proverbs-28/">Image 1</a> </h4>
+
+		<h4><a href="https://www.pinterest.com/pin/427419820861485609/">Image 2</a> </h4>
 
 	</div>	
 	
